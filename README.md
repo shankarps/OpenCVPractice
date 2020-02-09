@@ -3,7 +3,8 @@ https://docs.opencv.org/master/d6/d00/tutorial_py_root.html
 
 The project is organized as ackages for each section of the tutorial.
 
-##Installation
+### Installation
+
 Run the following command.
 
 `pip install -r requirements.txt`

@@ -3,7 +3,7 @@ import cv2 as cv
 from matplotlib import pyplot as plt
 
 # Load a color image in grayscale
-img = cv.imread('C:/shankar/code/python_code/OpenCV/landscape.jpg', -1)
+img = cv.imread('./media/landscape.jpg', -1)
 # print(img)
 b, g, r = cv.split(img)
 img2 = cv.merge([r, g, b])
