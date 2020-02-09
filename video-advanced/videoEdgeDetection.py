@@ -17,8 +17,9 @@ def capture_stream():
         frame = cv.resize(frame, (100, 100))
         # Add Canny Edge Detection to the frame,
         # with min & max values of 100 and 200
-        # use np.dstack after to make a 3-channel image
         frame = cv.Canny(frame, 100, 200)
+        # use np.dstack after to make a 3-channel image
+        # Needed for Linux.
         frame = np.dstack((frame, frame, frame))
         # Write out the frame
         out.write(frame)
